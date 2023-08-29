@@ -1,5 +1,4 @@
 /target/
 .DS_Store
-.gif
-.jpg
-.png
+#Carpetas a ignorar
+./src/img
