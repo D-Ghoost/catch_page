@@ -1,0 +1,4 @@
+/target/
+.DS_Store
+#Carpetas a ignorar
+./src/img
