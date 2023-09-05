@@ -4,9 +4,96 @@
     --section-bg-color: #151A1D;
 }
 
+
 @font-face {
     font-family:'Lexend Giga', sans-serif;
     src:  url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700&display=swap');
 }
 
+body {
+    background-color: #33312E;
+    color: #FFFBE7;
+    font-family: 'Lexend Giga', sans-serif;
+    font-weight: 900;
+
+}
+
 /* CSS */
+
+/* FOOTER CSS */
+.title-footer {
+    text-align: center;
+    letter-spacing: 4px;
+    margin-top: 130px;
+
+}
+
+.list-footer {
+    padding:0;
+    text-align: center;
+ 
+}
+
+.list-footer li {
+    display: inline;
+    margin: 50px;
+
+}
+.list-footer li:last-child {
+    display: none;
+  }
+
+
+/* Tablet */
+@media (max-width: 1000px) {
+
+    .title-footer {
+        display: none;
+    }
+
+    .list-footer {
+        font-size: larger;
+        display: inline;
+        text-align: center;
+        line-height: 70px;
+        
+    }
+    .list-footer li {
+        display: block;
+    }
+
+    .list-footer li:nth-child(4) {
+        margin-bottom: 60px;
+      }
+    
+}
+
+/* Movile */
+@media (max-width: 500px) {
+
+    .title-footer {
+        display: none;
+    }
+    .logo-footer {
+        display: none;
+    }
+
+    .list-footer {
+        font-size: xx-large;
+        display: inline;
+        text-align: center;
+        line-height: 100px;
+        
+    }
+    .list-footer li:last-child {
+        display: block;
+        line-height: normal;
+        margin: 30px;
+        margin-bottom: 100px;
+      }
+    .list-footer li:nth-child(4) {
+        display: none;
+      }
+    
+}
+
