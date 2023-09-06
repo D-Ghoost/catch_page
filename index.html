@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/style/style.css" >
+    <link rel="stylesheet" href="./src/style/style.css">
     <title>{Catch}</title>
 </head>
+
 <body>
-    <!-- Recordad que se tiene que crear dos navbars para mobil y desk -->
+
+    <!-- start navbar desk -->
+    <nav id="navdesk">
+        <div class="navdesk__logo">
+            <h1>&ltCATCH&gt</h1>
+        </div>
+        <div class="navdesk__list">
+            <ul>
+                <li>Inicio</li>
+                <li>Proyectos</li>
+                <li>Contactos</li>
+                <li>¿Quienes Somos?</li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end navbar desk -->
+
     <!-- Aqui empieza navbar mobil -->
-    <div id="nav">
-        <h1>{CATCH}</h1>
-        <ul>
-            <li>Inicio</li>
-            <li>Proyectos</li>
-            <li>Contactos</li>
-            <li>¿Quienes Somos?</li>
-        </ul>
-    </div>
+    <nav id="navmobil">
+        <div class="navmobil__logo">
+            <h1>&ltCATCH&gt</h1>
+        </div>
+        <div class="navmobil__menu">
+            <!-- Icono menu vertical -->
+            <svg id="navmobil__menu-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <ul>
+                <li>Inicio</li>
+                <li>Proyectos</li>
+                <li>Contactos</li>
+                <li>¿Quienes Somos?</li>
+            </ul>
+        </div>
+    </nav>
     <!-- finaliza navbar desk -->
     <main>
-        <!-- Aqui empieza pagina de inicio -->
-        <h1>This is a main page</h1>
+        <!-- Aqui empieza la seccion inicio -->
+        <section id="inicio">
+            <div class="inicio__presentacion">
+                <h1>This is a eslogan</h1>
+            </div>
+        </section>
+        <!-- Aqui finaliza la seccion inicio -->
+
+        <!-- Aqui empieza pagina de contacto -->
         <section id="contacto">
             <h2>CONTACTO</h2>
             <div id="contacto__chat-contenedor">
@@ -47,19 +80,19 @@
                 <a href="">Correo</a>
             </div>
         </section>
-        <!-- Aqui finaliza pagina de inicio -->
+        <!-- Aqui finaliza pagina de contacto -->
     </main>
     <!-- Aqui empieza el footer-->
-<footer>
-    <div class="gifooter">
-        <img src="img/Gif Footer.gif">
-    </div>
-    <hr /> 
-    <div class="social">
-        <img src="" alt="phone.png">
-        <img src="" alt="mail2.png">
-        <img src="" alt="likelid.png">
-    </div>
+    <footer>
+        <div class="gifooter">
+            <img src="img/Gif Footer.gif">
+        </div>
+        <hr />
+        <div class="social">
+            <img src="" alt="phone.png">
+            <img src="" alt="mail2.png">
+            <img src="" alt="likelid.png">
+        </div>
         <h1>{CATch}</h1>
         <ul class="list-footer">
             <li>Inicio</li>
@@ -67,7 +100,8 @@
             <li>Contactos</li>
             <li>¿Quienes Somos?</li>
         </ul>
-    </div>
-</footer>
+        </div>
+    </footer>
 </body>
+
 </html>

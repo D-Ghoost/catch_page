@@ -10,3 +10,74 @@
 }
 
 /* CSS */
+
+*{
+    margin:0px;
+    font-family: 'Lexend Giga', sans-serif;
+}
+
+#navmobil{
+    display: none;
+}
+
+#navdesk{
+    height: 8vh;
+    position: sticky;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-color);
+    background-color: var(--main-bg-color);
+}
+
+.navdesk__logo h1{
+    font-size: 5vw;
+}
+
+.navdesk__list ul{
+    display: flex;
+    list-style: none;
+}
+
+.navdesk__list li{
+    margin: 0px 25px 0px 25px;
+    font-weight: bold;
+}
+
+main{
+    scroll-behavior: smooth;
+}
+
+/* Mobile */
+@media (width <= 425px){
+    #navdesk{
+        display: none;
+    }
+
+    #navmobil{
+        height: 8vh;
+        position: sticky;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--main-bg-color);
+        color: var(--main-color);
+    }
+    
+    #navmobil ul{
+        list-style: none;
+        display: none;
+    }
+    
+    #navmobil__menu-icon{
+        width: 10vw;;
+    }
+    
+    .navmobil__logo{
+        margin: 5px 10px 5px 10px;
+    }
+    
+    .navmobil__menu{
+        margin: 5px 10px 5px 10px;
+    }
+}
