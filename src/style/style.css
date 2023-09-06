@@ -13,17 +13,22 @@
 
 *{
     margin:0px;
+    padding: 0px;
     font-family: 'Lexend Giga', sans-serif;
 }
 
-#navmobil{
+.disable{
     display: none;
 }
 
-#navdesk{
+.navmobil__list-menu{
+    display: none;
+}
+
+.navmobil{
     height: 8vh;
     position: sticky;
-    display: flex; 
+    display: flex; /* flex */
     justify-content: space-between;
     align-items: center;
     color: var(--main-color);
@@ -31,7 +36,7 @@
 }
 
 .navdesk__logo h1{
-    font-size: 5vw;
+    font-size: 2em;
 }
 
 .navdesk__list ul{
@@ -48,13 +53,32 @@ main{
     scroll-behavior: smooth;
 }
 
-/* Mobile */
-@media (width <= 425px){
-    #navdesk{
-        display: none;
-    }
+#inicio{
+    background-image: url('../../assets/img/init_bg.gif');
+    background-size: cover;
+    background-position: 40%;
+}
 
-    #navmobil{
+.inicio__presentacion{
+    height: 100vh;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: brightness(80%);
+}
+
+.inicio__presentacion h1{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+
+/* Mobile */
+@media (width <= 768px){
+
+    .navmobil{
         height: 8vh;
         position: sticky;
         display: flex;
@@ -64,13 +88,8 @@ main{
         color: var(--main-color);
     }
     
-    #navmobil ul{
-        list-style: none;
-        display: none;
-    }
-    
     #navmobil__menu-icon{
-        width: 10vw;;
+        width: 4vh;
     }
     
     .navmobil__logo{
@@ -79,5 +98,26 @@ main{
     
     .navmobil__menu{
         margin: 5px 10px 5px 10px;
+    }
+    
+    .navmobil__list-menu {
+        width: 100vw;
+        height: 40vh;
+        position: absolute;   
+        display: none; /* flex */
+        justify-content: center;
+        background-color: var(--main-bg-color);
+        z-index: 1;
+    }
+
+    .navmobil__list-menu ul{
+        list-style: none;
+    }
+
+    .navmobil__list-menu li{
+        padding: 2em 0em 2em 0em;
+        color: var(--main-color);
+        font-weight: bold;
+        text-align: center;
     }
 }
