@@ -1,3 +1,5 @@
+
+
 :root{
     --main-bg-color: #33312E;
     --main-color: #FFFBE7;
@@ -25,7 +27,7 @@
     display: none;
 }
 
-.navmobil{
+.navdesk{
     height: 8vh;
     position: sticky;
     display: flex; /* flex */
@@ -77,6 +79,10 @@ main{
 
 /* Mobile */
 @media (width <= 768px){
+
+    .disable{
+        display: none;
+    }
 
     .navmobil{
         height: 8vh;
