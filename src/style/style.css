@@ -19,7 +19,11 @@
     font-family: 'Lexend Giga', sans-serif;
 }
 
-.disable{
+main{
+    scroll-behavior: smooth;
+}
+
+.navmobil{
     display: none;
 }
 
@@ -29,21 +33,25 @@
 
 .navdesk{
     height: 8vh;
-    position: sticky;
+    width: 100vw;
+    position: fixed;
     display: flex; /* flex */
     justify-content: space-between;
     align-items: center;
     color: var(--main-color);
-    background-color: var(--main-bg-color);
+    background-color: transparent;
+    z-index: 1;
 }
 
 .navdesk__logo h1{
     font-size: 2em;
+    padding: 2dvw;
 }
 
 .navdesk__list ul{
     display: flex;
     list-style: none;
+    padding: 2dvw;
 }
 
 .navdesk__list li{
@@ -51,9 +59,7 @@
     font-weight: bold;
 }
 
-main{
-    scroll-behavior: smooth;
-}
+
 
 #inicio{
     background-image: url('../../assets/img/init_bg.gif');
@@ -76,22 +82,27 @@ main{
     font-weight: bold;
 }
 
+.add-color{
+    background-color: var(--main-bg-color);
+}
 
 /* Mobile */
 @media (width <= 768px){
 
-    .disable{
+    .navdesk{
         display: none;
     }
 
     .navmobil{
         height: 8vh;
-        position: sticky;
+        width: 100vw;
+        position: fixed;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: var(--main-bg-color);
+        background-color: transparent;
         color: var(--main-color);
+        z-index: 1;
     }
     
     #navmobil__menu-icon{
@@ -109,10 +120,11 @@ main{
     .navmobil__list-menu {
         width: 100vw;
         height: 40vh;
-        position: absolute;   
-        display: none; /* flex */
+        display: flex; /* flex */
+        position: fixed;   
+        top: 8%;
         justify-content: center;
-        background-color: var(--main-bg-color);
+        background-color: transparent;
         z-index: 1;
     }
 
@@ -126,4 +138,13 @@ main{
         font-weight: bold;
         text-align: center;
     }
+
+    .hiden-menu{
+        display: none;
+    }
+
+    .add-color{
+        background-color: var(--main-bg-color);
+    }
+    
 }
