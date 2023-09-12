@@ -320,8 +320,10 @@
         background-repeat: no-repeat;
     }
 
+
     .contacto--contenedor-resize {
-        width: 785px;
+        width: 100%;
+        max-width: 800px;
         height: 100%;
         margin: 0 auto;
         display: flex;
@@ -333,7 +335,7 @@
     .contacto__texto-contenedor {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         width: 320px;
         height: 300px;
         margin: 0 auto;
@@ -376,38 +378,4 @@
 
   @media screen and (min-width: 1024px) {
 
-    .contacto {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        min-width: 320px;
-        text-align: center;
-        background-color: #33312E;
-    }
-
-    .contacto__titulo {
-        width: 100%;
-        height: 80px;
-        padding-left: 2%;
-        display: flex;
-        justify-content:space-between;
-        align-items: center;
-    }
-
-    .contacto__chat-contenedor-img {
-        width: 100%;
-        height: 100%;
-        opacity: 0.8;
-        margin: 0 auto;
-        display: flex;
-    }
-
-    .contacto--contenedor-resize {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        display: flex;
-    }
   }
