@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700&display=swap');
+
+
+:root{
+    --main-bg-color: #33312E;
+    --main-color: #FFFBE7;
+    --section-bg-color: #151A1D;
+}
+
+@font-face {
+    font-family:'Lexend Giga', sans-serif;
+    src:  url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700&display=swap');
+}
+
+/* CSS */
+
+#AboutMain {
+    background-color: #151A1D; 
+    position: relative; 
+    height: 300px;
+}
+
+#AboutArt{
+    width: 200px; height: 200px; 
+    background: linear-gradient(to top, #151A1D, #FFFBE7); 
+    transform: rotate(45deg); 
+    margin: 150px auto; 
+    position: relative;
+}
+
+#AboutSquare{
+    position: absolute; 
+    width: 100%; height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transform: rotate(-45deg);
+}
+
+#AboutText {
+    text-align: center; 
+    color: #FFFBE7; 
+    font-size: 25px; 
+    padding: 10px;
+}
