@@ -36,6 +36,16 @@
     
 }
 
+.contacto-separador {
+    position: relative;
+    width: 95%;
+    height: 5px;
+    background: #FFFBE7;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
 .contacto__titulo {
     width: 100%;
     height: 80px;
@@ -287,7 +297,7 @@
     align-items: center;
 }
 
-.contacto-correo__boton a {
+.contacto-correo__boton-1 {
     width: 100%;
     height: 100%;
     flex-shrink: 0;
@@ -304,9 +314,15 @@
     padding: 15px;
 }
 
+.contacto-correo__boton-2 {
+    visibility: hidden;
+}
+
 /* Tablet */
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
+    /* … */
+  
 
     .contacto__chat-contenedor {
         margin: 0 auto;
@@ -323,7 +339,7 @@
 
     .contacto--contenedor-resize {
         width: 100%;
-        max-width: 800px;
+        max-width: 768px;
         height: 100%;
         margin: 0 auto;
         display: flex;
@@ -376,6 +392,89 @@
 
   }
 
-  @media screen and (min-width: 1024px) {
+  @media (min-width: 1440px) {
+
+    .contacto h2 {
+        letter-spacing: 31px;
+    }
+
+    .contacto__chat-contenedor-img {
+        width: 100%;
+        max-width: 1504px;
+        height: 100%;
+        opacity: 0.8;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .contacto--contenedor-resize {
+        width: 100%;
+        max-width: 600px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contacto__texto-contenedor {
+        margin: auto 0;
+        align-self: center;
+        padding-left: 5%;
+        width:  450px;
+        margin-left: 10%;
+    }
+
+    .contacto__texto-contenedor h3{
+        text-align: left;
+    }
+    .contacto__texto-contenedor p{
+        text-align: left;
+    }
+
+    .contacto__titulo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 2% ;
+    }
+
+    .contacto-correo {
+        width: 100%;
+        height: 180px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto-correo__boton {
+        max-width: 470px;
+    }
+
+    .contacto-correo__icono {
+        margin-right: 5%;
+    }
+
+    .contacto-correo__boton-1 {
+        display: none;
+    }
+    
+    .contacto-correo__boton-2 {
+        visibility: visible;
+        text-decoration: none;
+        text-align: center;
+        width: 243px;
+        height: 28px;
+        flex-shrink: 0;
+        color: #000;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.10);
+        font-family: Lexend Giga;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 119.49%; /* 23.898px */
+        letter-spacing: -1.7px;
+    }
 
   }
