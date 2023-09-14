@@ -87,7 +87,7 @@ main{
 }
 
 /* Mobile */
-@media (width <= 768px){
+@media (max-width: 768px) {
 
     .navdesk{
         display: none;

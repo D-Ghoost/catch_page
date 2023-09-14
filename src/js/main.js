@@ -9,6 +9,7 @@ iconMenuMobil.addEventListener('click', toggleMenu);
 
 
 function toggleMenu(){
+    let isOpenMenu = navMobil_list.classList.contains('hiden-menu');
     if(!isOpenMenu){
         navMobil_list.classList.add('hiden-menu');
     }else{
@@ -18,6 +19,7 @@ function toggleMenu(){
 
 
 window.onscroll = function () {
+    let isOpenMenu = navMobil_list.classList.contains('hiden-menu');
     if(window.scrollY !== 0){
         navDesk.classList.add('add-color');
         navMobil.classList.add('add-color');
@@ -25,6 +27,6 @@ window.onscroll = function () {
     }else{
         navDesk.classList.remove('add-color');
         navMobil.classList.remove('add-color');
-        navMobil_list.classList.remove('add-color');
+        
     }
 }
