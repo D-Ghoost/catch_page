@@ -44,7 +44,7 @@ main{
 }
 
 .navdesk__logo h1{
-    font-size: 2em;
+    font-size: 3vmax;
     padding: 2dvw;
 }
 
@@ -69,7 +69,6 @@ main{
 
 .inicio__presentacion{
     height: 100vh;
-    height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -87,14 +86,14 @@ main{
 }
 
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 425px) {
 
     .navdesk{
         display: none;
     }
 
     .navmobil{
-        height: 8vh;
+        height: 12vmax;
         width: 100vw;
         position: fixed;
         display: flex;
@@ -106,13 +105,26 @@ main{
     }
     
     #navmobil__menu-icon{
-        width: 4vh;
+        width: 8vmax;
     }
     
     .navmobil__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 5px 10px 5px 10px;
     }
     
+    .navmobil__logo p{
+        margin: 0px 5px 0px 5px;
+        font-size: 7vmax;
+        font-weight: 100;
+    }
+
+    .navmobil__logo img{
+        width: 8vmax;
+    }
+
     .navmobil__menu{
         margin: 5px 10px 5px 10px;
     }
