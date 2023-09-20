@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700&display=swap');
+
 :root{
     --main-bg-color: #33312E;
     --main-color: #FFFBE7;
@@ -10,11 +12,17 @@
     src:  url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700&display=swap');
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: var(--main-bg-color);
     color: #FFFBE7;
     font-family: 'Lexend Giga', sans-serif;
-    font-weight: 900;
+    font-weight: 800;
 
 }
 
@@ -23,9 +31,13 @@ body {
 /* FOOTER CSS */
 .title-footer {
     text-align: center;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-size: 50px;
+    padding: 2%;
 
+}
+.footer__line {
+    display: none;
 }
 
 .list-footer {
@@ -45,25 +57,49 @@ body {
   }
 
 .social-footer {
-    display: inline;
-    max-width: 50px;
-    fill: var(--main-color);
+    display: flex;
+    justify-content: center;
     align-items: center;
+    fill: var(--main-color);
+    padding: 2%;
+}
 
+.social-footer__line {
+    width: 100vw;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.social-footer__line hr {
+    height: 3px;
+    background-color: var(--main-color);
+}
+.social-footer__list {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.social-footer__item {
+    margin: 0px 25px 0px 25px;
 }
 .logo-footer {
     display: none;
 }
 
 #gifooter{
+    height: 50vmin;
+    margin-bottom: 50px;
     background-image: url('../../assets/img/footer_bg.gif');
     background-size: cover;
     background-position: 40%;
+    
 }
 
 .space{
     font-size: 300px;
 }
+
 
 
 
@@ -93,10 +129,41 @@ body {
     }
 
     .logo-footer {
-        display: inline;
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 100;
+        font-size: 100px;
+    }
+    .logo-footer img{
+        width: 20%; 
+    }
+
+    .social-footer__line hr {
+        display: none;
+    }
+
+    .footer__line {
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 5%;
+    }
+
+    .footer__line hr {
+        height: 4px;
+        background-color: var(--main-color);
 
     }
-    
+
+    .social-footer__item {
+        margin: 0px 25px 25px 25px;
+        width: max-content;
+    }
+
 }
 
 /* Movile */
@@ -135,5 +202,10 @@ body {
     .social-footer {
         display: none;
     }
+
+    .footer__line {
+        display: none;
+    }
+
 }
 
