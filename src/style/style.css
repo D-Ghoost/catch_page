@@ -9,4 +9,49 @@
     src:  url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700&display=swap');
 }
 
+#Proyectos {
+    text-align: center;
+    padding: 5%;
+    background:var(--main-bg-color);    
+  }
+  
+  /* Style the header */
+  #proyectHeader {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+    text-align: left;
+    font-family: Lexend Giga;
+    word-spacing: 10%;
+  }
+  
+  /* Style the horizontal rule */
+  hr {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid (--main-color);
+  }
+  
+  /* Style the individual project divs */
+  #projectDiv {
+    display: inline-block;
+    margin: 7%;
+    color: var(--main-color);
+    width: 10vw;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  /* Style the project images */
+  img {
+    max-width: 100%;
+    height: auto;
+
+  }
+  
+  /* Style the project text */
+  p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
 /* CSS */
