@@ -8,45 +8,58 @@
     font-family:'Lexend Giga', sans-serif;
     src:  url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700&display=swap');
 }
+*{
+  margin: 0px;
+  padding: 0px;
+  background-color: #33312E;
+}
+/*Seccion de proyectos*/
+#proyectos{
+  background-color: var(--main-bg-color);
+}
 
-#Proyectos {
-    text-align: center;
-    padding: 5%;
-    background:var(--main-bg-color);    
-  }
-  
-  /*header */
-  #proyectHeader {
-  
-    
-  }
-  
-  /* horizontal rule */
-  hr {
-    width: 100%;
-    margin: 0 auto;
-    border: 1px solid (--main-color);
-  }
-  
-  /*individual project divs */
-  #projectDiv {
-    display: inline-block;
-    margin: 7%;
-    color: var(--main-color);
-    width: 10vw;
-    padding: 10px 10px 10px 10px;
-  }
-  
-  /*project images */
-  img {
-    max-width: 100%;
-    height: auto;
+#proyectos hr{
+  margin: 20px 20px 20px 20px;
+}
+#proyectos h2{
+  font-family:'Lexend Giga' ;
+  color: var(--main-color);
+  letter-spacing: 25px;
+  margin-left: 20px;
+}
 
-  }
-  
-  /* project text */
-  p {
-    font-size: 16px;
-    margin: 10px 0;
-  }
+#proyectos p{
+  color: var(--main-color);
+}
+
+.container{
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+.columna{
+  flex: 0 0 auto;
+  margin-right: 5%;
+  width: 20%;
+}
+
+.columna img{
+  max-width: 100%;
+  height: auto;
+  border: 1px solid black;
+}
+.proyectos img{
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.container img{
+  width: 100%;
+  height: 100%;
+
+}
+
+
 
