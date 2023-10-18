@@ -34,6 +34,7 @@ main{
 .navdesk{
     height: 8vh;
     width: 100vw;
+    padding: 10px 0px 10px 0px;
     position: fixed;
     display: flex; /* flex */
     justify-content: space-between;
@@ -159,4 +160,10 @@ main{
         background-color: var(--main-bg-color);
     }
     
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .navdesk__logo h1{
+        font-size: 4vmax;
+    }
 }
