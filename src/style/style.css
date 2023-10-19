@@ -31,6 +31,161 @@ body {
 
 /* CSS */
 
+*{
+    margin:0px;
+    padding: 0px;
+    font-family: 'Lexend Giga', sans-serif;
+}
+
+main{
+    scroll-behavior: smooth;
+}
+
+.navmobil{
+    display: none;
+}
+
+.navmobil__list-menu{
+    display: none;
+}
+
+.navdesk{
+    height: 8vh;
+    width: 100vw;
+    padding: 10px 0px 10px 0px;
+    position: fixed;
+    display: flex; /* flex */
+    justify-content: space-between;
+    align-items: center;
+    color: var(--main-color);
+    background-color: transparent;
+    z-index: 1;
+}
+
+.navdesk__logo h1{
+    font-size: 3vmax;
+    padding: 2dvw;
+}
+
+.navdesk__list ul{
+    display: flex;
+    list-style: none;
+    padding: 2dvw;
+}
+
+.navdesk__list li{
+    margin: 0px 25px 0px 25px;
+    font-weight: bold;
+}
+
+
+
+#inicio{
+    background-image: url('../../assets/img/init_bg.gif');
+    background-size: cover;
+    background-position: 40%;
+}
+
+.inicio__presentacion{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: brightness(80%);
+}
+
+.inicio__presentacion h1{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.add-color{
+    background-color: var(--main-bg-color);
+}
+
+/* Mobile */
+@media (max-width: 425px) {
+
+    .navdesk{
+        display: none;
+    }
+
+    .navmobil{
+        height: 12vmax;
+        width: 100vw;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: transparent;
+        color: var(--main-color);
+        z-index: 1;
+    }
+    
+    #navmobil__menu-icon{
+        width: 8vmax;
+    }
+    
+    .navmobil__logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 10px 5px 10px;
+    }
+    
+    .navmobil__logo p{
+        margin: 0px 5px 0px 5px;
+        font-size: 7vmax;
+        font-weight: 100;
+    }
+
+    .navmobil__logo img{
+        width: 8vmax;
+    }
+
+    .navmobil__menu{
+        margin: 5px 10px 5px 10px;
+    }
+    
+    .navmobil__list-menu {
+        width: 100vw;
+        height: 40vh;
+        display: flex; /* flex */
+        position: fixed;   
+        top: 8%;
+        justify-content: center;
+        background-color: transparent;
+        z-index: 1;
+    }
+
+    .navmobil__list-menu ul{
+        list-style: none;
+    }
+
+    .navmobil__list-menu li{
+        padding: 2em 0em 2em 0em;
+        color: var(--main-color);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .hiden-menu{
+        display: none;
+    }
+
+    .add-color{
+        background-color: var(--main-bg-color);
+    }
+    
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    .navdesk__logo h1{
+        font-size: 4vmax;
+    }
+}
+
 /* FOOTER CSS */
 .title-footer {
     text-align: center;

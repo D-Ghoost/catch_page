@@ -5,121 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/style/style.css" />
     <title>{Catch}</title>
-  </head>
-  <body>
-    <!-- Recordad que se tiene que crear dos navbars para mobil y desk -->
+</head>
+
+<body>
+
+    <!-- start navbar desk -->
+    <nav class="navdesk">
+        <div class="navdesk__logo">
+            <h1>&ltCATCH&gt</h1>
+        </div>
+        <div class="navdesk__list">
+            <ul>
+                <li>Inicio</li>
+                <li>Proyectos</li>
+                <li>Contactos</li>
+                <li>¿Quienes Somos?</li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end navbar desk -->
+
     <!-- Aqui empieza navbar mobil -->
-    <div id="nav">
-      <h1>{CATCH}</h1>
-      <ul>
-        <li>Inicio</li>
-        <li>Proyectos</li>
-        <li>Contactos</li>
-        <li>¿Quienes Somos?</li>
-      </ul>
+    <nav class="navmobil">
+        <div class="navmobil__logo">
+            <p>&lt </p>
+            <img src="./assets/svg/logo_mobile.svg" alt="logo_catch">
+            <p> &gt</p>
+        </div>
+        <div class="navmobil__menu">
+            <!-- Icono menu vertical -->
+            <svg id="navmobil__menu-icon" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+        </div>
+    </nav>
+    <div class="navmobil__list-menu hiden-menu add-color">
+        <ul>
+            <li>Inicio</li>
+            <li>Proyectos</li>
+            <li>Contactos</li>
+            <li>¿Quienes Somos?</li>
+        </ul>
     </div>
     <!-- finaliza navbar desk -->
     <main>
-      <!-- Aqui empieza pagina de inicio -->
-      <h1>This is a main page</h1>
-      <section id="contacto">
-        <h2>CONTACTO</h2>
-        <div id="contacto__chat-contenedor">
-          <div>
-            <p>Hola! Quiero una pagina web.</p>
-          </div>
-          <div>
-            <p>Hola, buenas tardes :3</p>
-          </div>
-          <div>
-            <p>Con gusto! Cuéntanos qué quieres hacer y te ayudaremos.</p>
-          </div>
-          <div>
-            <p>Genial! Muchas gracias c:</p>
-          </div>
-          <div>
-            <p>Quiero crear una pagina...</p>
-          </div>
-          <a href="">INICIAR CHAT</a>
-        </div>
-        <div>
-          <div></div>
-          <a href="">Correo</a>
-        </div>
-      </section>
-      <!-- Aqui finaliza pagina de inicio -->
-      <!--Inicio seccion proyectos-->
-
-      <section id="Proyectos">
-        <h2 id="projectos_header">PROYECTOS</h2>
-        <hr />
-        <div>
-          <img src="" alt="test.png" />
-          <p>Proyecto 1</p>
-        </div>
-        <div>
-          <img src="" alt="test.png" />
-          <p>Proyecto 2</p>
-        </div>
-        <div>
-          <img src="" alt="test.png" />
-          <p>Proyecto 3</p>
-        </div>
-        <div>
-          <img src="" alt="test.png" />
-          <p>Proyecto 4</p>
-        </div>
-      </section>
-      <!--Fin seccion proyectos-->
-
-      <!--Inicio seccion Contacto-->
-      <section class="contacto">
-        <div class="contacto-separador"></div>
-        <div class="contacto__titulo">
-          <h2>CONTACTO</h2>
-        </div>
-        <div class="contacto__chat-contenedor">
-          <div class="contacto__chat-contenedor-img">
-            <div class="contacto__texto-contenedor">
-              <h3>Chatea con nosotros</h3>
-              <p>
-                Estamos disponibles para atender tus solicitudes por chat de
-                WhatsApp y correo electrónico, da clic en la opción que desees.
-              </p>
+        <!-- Aqui empieza la seccion inicio -->
+        <section id="inicio">
+            <div class="inicio__presentacion">
+                <h1>This is a eslogan</h1>
             </div>
-            <div class="contacto--contenedor-resize">
-              <div class="contacto__chat-verde">
-                <p>Hola! Quiero una pagina web.</p>
-              </div>
-              <div class="contacto__chat-blanco">
-                <p>Hola, buenas tardes :3</p>
-              </div>
-              <div class="contacto__chat-blanco">
-                <p>Con gusto! Cuéntanos qué quieres hacer y te ayudaremos.</p>
-              </div>
-              <div class="contacto__chat-verde">
-                <p>Genial! Muchas gracias c:</p>
-              </div>
-              <div class="contacto__chat-verde-recorte">
-                <p>Quiero crear una pagina...</p>
-              </div>
-              <div class="contacto__boton-container">
-                <div class="contacto-boton-container__boton">
-                  <a href="">INICIAR CHAT</a>
+        </section>
+        <!-- Aqui finaliza la seccion inicio -->
+
+        <!-- Aqui empieza pagina de contacto -->
+        <section id="contacto">
+            <h2>CONTACTO</h2>
+            <div id="contacto__chat-contenedor">
+                <div>
+                    <p>Hola! Quiero una pagina web.</p>
                 </div>
-              </div>
+                <div>
+                    <p>Hola, buenas tardes :3</p>
+                </div>
+                <div>
+                    <p>Con gusto! Cuéntanos qué quieres hacer y te ayudaremos.</p>
+                </div>
+                <div>
+                    <p>Genial! Muchas gracias c:</p>
+                </div>
+                <div>
+                    <p>Quiero crear una pagina...</p>
+                </div>
+                <a href="">INICIAR CHAT</a>
             </div>
-          </div>
-        </div>
-        <div class="contacto-correo">
-          <div class="contacto-correo__icono"></div>
-          <div class="contacto-correo__boton">
-            <a class="contacto-correo__boton-1" href="">Correo</a>
-            <a class="contacto-correo__boton-2" href="">Contacto por correo</a>
-          </div>
-        </div>
-      </section>
-      <!--Fin seccion Contacto-->
+            <div>
+                <div></div>
+                <a href="">Correo</a>
+            </div>
+        </section>
+        <!-- Aqui finaliza pagina de contacto -->
     </main>
 
     <!-- Aqui empieza el footer-->
