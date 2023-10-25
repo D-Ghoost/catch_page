@@ -749,7 +749,10 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-left: 2% ;
+    }
+
+    .contacto__titulo h2 {
+        margin-left: 2%;
     }
 
     .contacto-correo {
