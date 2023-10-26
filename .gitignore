@@ -1,2 +1,8 @@
 /target/
 .DS_Store
+<<<<<<< HEAD
+=======
+.vscode
+#Carpetas a ignorar
+./src/img
+>>>>>>> ee25672 (Fix: issue navbar)

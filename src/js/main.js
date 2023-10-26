@@ -27,6 +27,15 @@ window.onscroll = function () {
     }else{
         navDesk.classList.remove('add-color');
         navMobil.classList.remove('add-color');
-        
+    }
+    // position -> se esconde el navbar
+    if(window.scrollY >= 2017 ){
+        console.warn('Se debe esconder');
+        navDesk.classList.add('navdesk-off');
+        navMobil.classList.add('navmobil-off');
+    }else{
+        console.warn('Se debe mostrar');
+        navDesk.classList.remove('navdesk-off');
+        navMobil.classList.remove('navmobil-off');  
     }
 }
