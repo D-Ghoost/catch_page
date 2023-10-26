@@ -20,6 +20,7 @@ function toggleMenu(){
 
 window.onscroll = function () {
     let isOpenMenu = navMobil_list.classList.contains('hiden-menu');
+    console.log(window.scrollY );
     if(window.scrollY !== 0){
         navDesk.classList.add('add-color');
         navMobil.classList.add('add-color');
@@ -29,7 +30,7 @@ window.onscroll = function () {
         navMobil.classList.remove('add-color');
     }
     // position -> se esconde el navbar
-    if(window.scrollY >= 2017 ){
+    if(window.scrollY >= 1539 && screen.width >= 320 && screen.width <= 425 || window.scrollY >= 1599){
         console.warn('Se debe esconder');
         navDesk.classList.add('navdesk-off');
         navMobil.classList.add('navmobil-off');
