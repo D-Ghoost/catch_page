@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Inicio from '../components/Inicio.astro';
+import Proyectos from '../components/Proyectos.astro';
+import Contacto from '../components/Contacto.astro';
+---
+
+<Layout title="{ Catch }">
+	<main>
+		<Navbar title="CATCH"/>
+		<Inicio />
+		<Proyectos />
+		<Contacto />
+	</main>
+</Layout>
+
+<style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	main{
+		scroll-behavior: smooth;
+	}
+
+</style>

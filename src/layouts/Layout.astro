@@ -1,0 +1,40 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700&display=swap');
+	:root{
+		--main-bg-color: #33312E;
+		--main-color: #FFFBE7;
+		--section-bg-color: #151A1D;
+	}
+	@font-face {
+		font-family:'Lexend Giga', sans-serif;
+		src:  url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100;200;300;400;500;600;700&display=swap');	
+	}
+	body {
+		background-color: var(--main-bg-color);
+		color: #FFFBE7;
+		font-family: 'Lexend Giga', sans-serif;
+		font-weight: 800;
+	}
+</style>

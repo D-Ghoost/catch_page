@@ -1,0 +1,35 @@
+---
+import { Image } from 'astro:assets';
+import menuIcon from '../images/IconHamburger.svg';
+
+interface Props{
+        id: string;
+}
+
+const { id } = Astro.props;
+---
+
+<div class="navbar__menu">
+        <Image src={ menuIcon } alt="menu" id={ id } />
+</div>
+
+<style>
+        .navbar__menu{
+                display: none;
+        }
+
+
+        @media (max-width: 425px) {
+                #navbar__menu-icon{
+                        width: 7vmax;
+                }
+
+                .navbar__menu{
+                        padding: 0px 25px 0px 25px;
+                }
+                
+                .navbar__menu{
+                        display: block;
+                }
+        }
+</style>

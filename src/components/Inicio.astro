@@ -1,0 +1,54 @@
+---
+const eslogans = [
+    "Purr-fecionando tu presencia online.",
+    "Sitios web que ronronean de calidad."
+];
+
+const idx = Math.floor(Math.random() * eslogans.length);
+
+---
+
+<section id="inicio">
+    <div class="inicio__presentacion">
+        <h1>{ eslogans[idx] }</h1>
+    </div>
+</section>
+
+<style>
+    #inicio{
+       background-image: url('../images/bg-init.gif');
+        background-size: cover;
+        background-position: 40%;
+    }
+
+    .inicio__presentacion{
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: brightness(80%);
+    }
+
+    .inicio__presentacion h1{
+        width: 33ch;
+        display: block;
+        white-space: nowrap;
+        text-align: center;
+        color: var(--main-color);
+        border-right: 0.15em solid var(--main-color);
+        font-weight: bold;
+        animation: typing 2s steps(34),  
+                    blink .5s infinite step-end alternate; 
+        overflow: hidden;
+    }
+
+
+    @keyframes typing {
+        from { width: 0 }
+    }
+
+    @keyframes blink {
+        50% { border-color: transparent }
+    }
+</style>
